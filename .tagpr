@@ -1,0 +1,6 @@
+# Configuration file for tagpr
+[tagpr]
+versionFile = "package.json"
+changelog = true
+	vPrefix = true
+	releaseBranch = main

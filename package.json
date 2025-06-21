@@ -1,0 +1,65 @@
+{
+  "name": "vscode-ghq-multi-workspace",
+  "displayName": "GHQ Workspace Manager",
+  "description": "Manage multiple workspaces of the same repository with branch information",
+  "license": "MIT",
+  "version": "0.0.0",
+  "publisher": "horai93",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/horai93/vscode-ghq-multi-workspace.git"
+  },
+  "bugs": {
+    "url": "https://github.com/horai93/vscode-ghq-multi-workspace/issues"
+  },
+  "homepage": "https://github.com/horai93/vscode-ghq-multi-workspace#readme",
+  "keywords": [
+    "ghq",
+    "workspace",
+    "git",
+    "repository",
+    "branch",
+    "multi-workspace"
+  ],
+  "engines": {
+    "vscode": "^1.40.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:extension.ghqWorkspaceOpen",
+    "onCommand:extension.ghqCloneWorkspace"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.ghqWorkspaceOpen",
+        "title": "GHQ: Open Workspace"
+      },
+      {
+        "command": "extension.ghqCloneWorkspace",
+        "title": "GHQ: Clone Current Repository to New Workspace"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "extension.ghqWorkspaceOpen",
+        "key": "ctrl+cmd+p",
+        "mac": "ctrl+cmd+p"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "pnpm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "test": "pnpm run compile && node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/vscode": "^1.40.0",
+    "typescript": "^5.0.0"
+  }
+}
