@@ -3,7 +3,7 @@
   "displayName": "GHQ Workspace Manager",
   "description": "Manage multiple workspaces of the same repository with branch information",
   "license": "MIT",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "publisher": "horai93",
   "repository": {
     "type": "git",
