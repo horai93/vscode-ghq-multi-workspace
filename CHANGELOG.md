@@ -1,5 +1,7 @@
 # Changelog
 
+## [v0.0.1](https://github.com/horai93/vscode-ghq-multi-workspace/commits/v0.0.1) - 2025-06-21
+
 ## [v0.1.0](https://github.com/horai93/vscode-ghq-multi-workspace/commits/v0.1.0) - 2025-06-21
 - Release for v0.1.0 by @github-actions in https://github.com/horai93/vscode-ghq-multi-workspace/pull/1
 
